@@ -1,0 +1,5 @@
+fragment MeField on User {
+  id
+  name
+  email
+}

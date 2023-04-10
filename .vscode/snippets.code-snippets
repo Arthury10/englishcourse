@@ -1,0 +1,39 @@
+{
+    "React Component With Folder Name": {
+		"prefix": "rncht",
+		"body": [
+		  "import React from \"react\";",
+		  "import { Flex, Text } from \"@chakra-ui/react\";",
+		  "",
+			"type ${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}Props = {}",
+		  "",
+		  "export const ${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}:React.FC<${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}Props> = () => {",
+		  "  return (",
+		  "    <Flex>",
+		  "      <Text>${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}</Text>",
+		  "    </Flex>",
+		  "  );",
+		  "}",
+		  ""
+		],
+		"description": "",
+	  },
+		"React subComponents": {
+			"prefix": "rnch",
+			"body": [
+				"import React from \"react\";",
+				"import { Flex, Text } from \"@chakra-ui/react\";",
+				"",
+				"export const ${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/} = () => {",
+				"  return (",
+				"    <Flex>",
+				"      <Text>${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}</Text>",
+				"    </Flex>",
+				"  );",
+				"}",
+				""
+			],
+			"description": "",
+			},
+		
+}

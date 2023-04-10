@@ -1,0 +1,16 @@
+mutation createClassroom($data: CreateClassroomInput){
+    createClassroom(data: $data){
+      id
+      name
+    }
+  }
+
+
+
+query getClassroomByPk($id: String){
+  getClassroomByPk(id: $id){
+    id
+    name
+    invite
+  }
+}

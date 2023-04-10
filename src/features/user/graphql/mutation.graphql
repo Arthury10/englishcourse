@@ -1,0 +1,21 @@
+# # mutation createOneUser($input: CreateOneUserInput!){
+# #   createOneUser(data: $input){
+# #     id
+# #   }
+# # }
+
+# mutation createOneUser($name: String!, $email: String!, $password: String!){
+#   createOneUser(input: {user: {
+#     name: $name,
+#     email: $email,
+#     password: $password
+#   }}){
+#     id
+#   }
+# }
+
+# mutation updateOneUser($id: ID!, $update: UpdateUserInput!){
+#   updateOneUser(input: {id: $id, update: $update}) {
+#     id
+#   }
+# }
